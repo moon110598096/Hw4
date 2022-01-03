@@ -1,3 +1,4 @@
+import java.util.Scanner;
 public class letterGrade {
     public static char func(int score) {
         char grade;
@@ -14,5 +15,11 @@ public class letterGrade {
         else
             grade ='F';
         return grade;
+    }
+    public static void main(String[] args){
+        Scanner scanner = new Scanner(System.in);
+        char ans ;
+        ans = func(scanner.nextInt());
+        System.out.println(ans);
     }
 }
